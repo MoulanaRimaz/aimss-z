@@ -1,0 +1,102 @@
+.footer {
+    background-color: #002222;
+    /* Darker shade of primary */
+    color: var(--gray-light);
+    padding: 4rem 0 0;
+    margin-top: auto;
+}
+
+.footerContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footerLogoSection {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.footerLogoImg {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footerLogo {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialIcons a {
+    font-size: 1.5rem;
+    color: var(--white);
+    transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+    color: var(--accent-color);
+}
+
+.column h4 {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.column h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.linkList {
+    list-style: none;
+}
+
+.linkList li {
+    margin-bottom: 0.8rem;
+}
+
+.linkList a {
+    transition: color 0.3s;
+}
+
+.linkList a:hover {
+    color: var(--accent-color);
+    padding-left: 5px;
+}
+
+.copyright {
+    background-color: #001111;
+    text-align: center;
+    padding: 1.5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    .footerContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

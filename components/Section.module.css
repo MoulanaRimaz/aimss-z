@@ -1,0 +1,15 @@
+.section {
+    padding: 5rem 0;
+}
+
+.light {
+    background-color: var(--background-color);
+}
+
+.dark {
+    background-color: var(--white);
+}
+
+.alt {
+    background-color: var(--gray-light);
+}

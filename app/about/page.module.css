@@ -1,0 +1,90 @@
+.headerSection {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 6rem 0;
+}
+
+.aboutLogos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.aboutLogos img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 0;
+    border: 3px solid var(--white);
+}
+
+.headerSection h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.contentBlock {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    border-top: 4px solid var(--secondary-color);
+}
+
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.committeeGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.memberCard {
+    background: var(--white);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.memberCard:hover {
+    transform: translateY(-5px);
+}
+
+.memberImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid var(--gray-light);
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
