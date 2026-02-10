@@ -1,0 +1,15 @@
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 7.1s
+  Running TypeScript ...
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/9) ...
+Error occurred prerendering page "/_not-found". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: useTheme must be used within a ThemeProvider
+    at <unknown> (D:\antigravity\aimss\aimss-z\.next\server\chunks\ssr\[root-of-the-server]__b41d1e6b._.js:1:1207)
+    at <unknown> (D:\antigravity\aimss\aimss-z\.next\server\chunks\ssr\[root-of-the-server]__b41d1e6b._.js:1:2020) {
+  digest: '1735991088'
+}
+Export encountered an error on /_not-found/page: /_not-found, exiting the build.
+Γ¿» Next.js build worker exited with code: 1 and signal: null

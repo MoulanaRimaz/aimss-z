@@ -5,8 +5,12 @@ const ThemeContext = createContext();
 
 export const useTheme = () => {
     const context = useContext(ThemeContext);
+    // Return default values during SSR or when outside provider
     if (!context) {
-        throw new Error('useTheme must be used within a ThemeProvider');
+        return {
+            theme: 'light',
+            toggleTheme: () => { }
+        };
     }
     return context;
 };
