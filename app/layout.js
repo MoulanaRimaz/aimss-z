@@ -2,7 +2,7 @@ import { Inter, Roboto } from 'next/font/google';
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ThemeProvider } from './context/ThemeContext';
+import { Providers } from './providers';
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-primary" });
 const roboto = Roboto({ weight: ["400", "700"], subsets: ["latin"], variable: "--font-heading" });
@@ -16,13 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${roboto.variable}`}>
-        <ThemeProvider>
+        <Providers>
           <Header />
           <main style={{ minHeight: '80vh' }}>
             {children}
           </main>
           <Footer />
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );
