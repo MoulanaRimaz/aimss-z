@@ -52,7 +52,27 @@
     color: var(--accent-color);
 }
 
-.mobileMenuBtn {
+.themeToggle {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.themeToggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--accent-color);
+    transform: rotate(15deg);
+}
+
+.menuButton {
     font-size: 1.5rem;
     color: var(--white);
 }

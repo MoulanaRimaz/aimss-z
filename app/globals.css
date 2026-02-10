@@ -16,6 +16,26 @@
   --font-heading: 'Roboto', sans-serif;
 }
 
+[data-theme="dark"] {
+  --primary-color: #00a5a5;
+  /* Lighter Teal for dark mode */
+  --secondary-color: #cc3333;
+  /* Lighter Maroon */
+  --accent-color: #ffcc00;
+  /* Slightly muted Gold */
+  --background-color: #1a1a1a;
+  /* Dark background */
+  --text-color: #e0e0e0;
+  /* Light Gray text */
+  --white: #ffffff;
+  --gray-light: #2d2d2d;
+  /* Darker gray for dark mode */
+}
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

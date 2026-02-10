@@ -1,12 +1,14 @@
 "use client";
 import { useState } from 'react';
 import Link from 'next/link';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTheme } from '../app/context/ThemeContext';
 import styles from './Header.module.css';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { theme, toggleTheme } = useTheme();
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -34,7 +36,14 @@ const Header = () => {
                         </Link>
                     ))}
                 </nav>
-                <button className={styles.mobileMenuBtn} onClick={toggleMenu} aria-label="Toggle menu">
+                <button
+                    onClick={toggleTheme}
+                    className={styles.themeToggle}
+                    aria-label="Toggle theme"
+                >
+                    {theme === 'light' ? <FaMoon /> : <FaSun />}
+                </button>
+                <button className={styles.menuButton} onClick={toggleMenu} aria-label="Toggle menu">
                     {isOpen ? <FaTimes /> : <FaBars />}
                 </button>
             </div>
