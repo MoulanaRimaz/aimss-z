@@ -11,7 +11,7 @@ export const metadata = {
   title: "AIMSS@Z | Zahira National School Hambantota",
   description: "Association for Improvement of Mathematics and Science Streams at Zahira National School Hambantota.",
   icons: {
-    icon: '/icon.jpg',
+    icon: '/images/aims.jpg',
   },
 };
 
